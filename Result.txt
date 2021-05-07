@@ -1,0 +1,229 @@
+=== Model information ===
+
+Filename:     LogisticTrain.model
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     trainLoan-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.StringToNominal-Rfirst-last
+Attributes:   13
+              Loan_ID
+              Gender
+              Married
+              Dependents
+              Education
+              Self_Employed
+              ApplicantIncome
+              CoapplicantIncome
+              LoanAmount
+              Loan_Amount_Term
+              Credit_History
+              Property_Area
+              Loan_Status
+
+=== Classifier model ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable                         Y
+==================================
+Gender=Female               0.0587
+Married=Yes                 0.6104
+Dependents=0                0.0477
+Dependents=1               -0.3983
+Dependents=2                 0.299
+Dependents=3+               0.0331
+Education=Not Graduate     -0.3864
+Self_Employed=Yes          -0.0187
+ApplicantIncome                  0
+CoapplicantIncome               -0
+LoanAmount                 -0.0017
+Loan_Amount_Term           -0.0013
+Credit_History              3.8935
+Property_Area=Urban          -0.16
+Property_Area=Rural        -0.3973
+Property_Area=Semiurban     0.4984
+Intercept                   -2.056
+
+
+Odds Ratios...
+                             Class
+Variable                         Y
+==================================
+Gender=Female               1.0605
+Married=Yes                 1.8412
+Dependents=0                1.0488
+Dependents=1                0.6715
+Dependents=2                1.3485
+Dependents=3+               1.0336
+Education=Not Graduate      0.6795
+Self_Employed=Yes           0.9815
+ApplicantIncome                  1
+CoapplicantIncome                1
+LoanAmount                  0.9983
+Loan_Amount_Term            0.9987
+Credit_History             49.0806
+Property_Area=Urban         0.8522
+Property_Area=Rural         0.6722
+Property_Area=Semiurban     1.6461
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     testLoan3
+Instances:     unknown (yet). Reading incrementally
+Attributes:   13
+
+=== Predictions on user test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:?        1:Y       0.85 
+        2        1:?        1:Y       0.833 
+        3        1:?        1:Y       0.814 
+        4        1:?        1:Y       0.727 
+        5        1:?        1:Y       0.683 
+        6        1:?        1:Y       0.742 
+        7        1:?        1:Y       0.819 
+        8        1:?        2:N       0.946 
+        9        1:?        1:Y       0.842 
+       10        1:?        1:Y       0.773 
+       11        1:?        1:Y       0.678 
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                 11     
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     trainLoan
+Instances:     unknown (yet). Reading incrementally
+Attributes:   13
+
+=== Predictions on user test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:Y        1:Y       0.743 
+        2        2:N        1:Y   +   0.799 
+        3        1:Y        1:Y       0.854 
+        4        1:Y        1:Y       0.766 
+        5        1:Y        1:Y       0.745 
+        6        1:Y        1:Y       0.776 
+        7        1:Y        1:Y       0.78 
+        8        2:N        2:N       0.849 
+        9        1:Y        1:Y       0.824 
+       10        2:N        1:Y   +   0.821 
+       11        1:Y        1:Y       0.851 
+       12        1:Y        1:Y       0.834 
+       13        1:Y        1:Y       0.762 
+       14        2:N        1:Y   +   0.669 
+       15        1:Y        1:Y       0.892 
+       16        1:Y        1:Y       0.748 
+       17        1:Y        1:Y       0.569 
+       18        2:N        2:N       0.936 
+       19        2:N        1:Y   +   0.743 
+       20        1:Y        1:Y       0.825 
+       21        2:N        2:N       0.925 
+       22        1:Y        1:Y       0.753 
+       23        2:N        2:N       0.883 
+       24        2:N        2:N       0.948 
+       25        2:N        1:Y   +   0.825 
+       26        1:Y        1:Y       0.906 
+       27        1:Y        1:Y       0.903 
+       28        1:Y        1:Y       0.783 
+       29        2:N        1:Y   +   0.695 
+       30        1:Y        1:Y       0.846 
+       31        2:N        1:Y   +   0.687 
+       32        2:N        1:Y   +   0.761 
+       33        2:N        1:Y   +   0.704 
+       34        1:Y        1:Y       0.908 
+       35        2:N        1:Y   +   0.61 
+       36        1:Y        1:Y       0.823 
+       37        2:N        2:N       0.902 
+       38        1:Y        1:Y       0.909 
+       39        1:Y        1:Y       0.653 
+       40        1:Y        1:Y       0.785 
+       41        2:N        1:Y   +   0.76 
+       42        1:Y        1:Y       0.757 
+       43        1:Y        1:Y       0.759 
+       44        1:Y        1:Y       0.902 
+       45        1:Y        1:Y       0.797 
+       46        1:Y        1:Y       0.772 
+       47        1:Y        1:Y       0.863 
+       48        1:Y        1:Y       0.842 
+       49        2:N        2:N       0.91 
+       50        1:Y        1:Y       0.84 
+       51        1:Y        1:Y       0.877 
+       52        1:Y        1:Y       0.858 
+       53        2:N        1:Y   +   0.861 
+       54        2:N        1:Y   +   0.843 
+       55        2:N        2:N       0.914 
+       56        1:Y        1:Y       0.911 
+       57        1:Y        1:Y       0.909 
+       58        2:N        1:Y   +   0.79 
+       59        1:Y        1:Y       0.822 
+       60        1:Y        1:Y       0.756 
+       61        1:Y        1:Y       0.818 
+       62        1:Y        1:Y       0.849 
+       63        2:N        2:N       0.946 
+       64        2:N        2:N       0.922 
+       65        2:N        2:N       0.889 
+       66        2:N        1:Y   +   0.872 
+       67        2:N        2:N       0.956 
+       68        1:Y        1:Y       0.808 
+       69        1:Y        1:Y       0.846 
+       70        2:N        2:N       0.892 
+       71        1:Y        1:Y       0.811 
+       72        1:Y        1:Y       0.868 
+       73        1:Y        1:Y       0.869 
+       74        2:N        2:N       0.864 
+       75        1:Y        1:Y       0.896 
+       76        2:N        1:Y   +   0.72 
+       77        2:N        1:Y   +   0.682 
+       78        2:N        1:Y   +   0.821 
+       79        2:N        2:N       0.853 
+       80        1:Y        1:Y       0.771 
+       81        1:Y        1:Y       0.861 
+       82        1:Y        1:Y       0.907 
+       83        2:N        1:Y   +   0.827 
+       84        2:N        1:Y   +   0.804 
+       85        1:Y        1:Y       0.878 
+       86        1:Y        1:Y       0.83 
+       87        1:Y        1:Y       0.784 
+       88        1:Y        1:Y       0.906 
+       89        1:Y        1:Y       0.727 
+       90        1:Y        1:Y       0.889 
+       91        1:Y        1:Y       0.899 
+       92        1:Y        1:Y       0.902 
+       93        1:Y        1:Y       0.783 
+       94        1:Y        1:Y       0.852 
+       95        1:Y        1:Y       0.862 
+       96        2:N        1:Y   +   0.612 
+       97        1:Y        1:Y       0.906 
+       98        1:Y        1:Y       0.918 
+       99        1:Y        1:Y       0.902 
+      100        1:Y        1:Y       0.895 
+
+=== Summary ===
+
+Correctly Classified Instances          79               79      %
+Incorrectly Classified Instances        21               21      %
+Kappa statistic                          0.4776
+Mean absolute error                      0.2817
+Root mean squared error                  0.3803
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.583    0.753      1.000    0.859      0.560    ?         ?         Y
+                 0.417    0.000    1.000      0.417    0.588      0.560    ?         ?         N
+Weighted Avg.    0.790    0.373    0.842      0.790    0.762      0.560    ?         ?         
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 64  0 |  a = Y
+ 21 15 |  b = N
+
