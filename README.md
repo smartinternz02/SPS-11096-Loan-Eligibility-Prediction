@@ -13,3 +13,6 @@ Loans are the core business of banks. The main profit comes directly from the lo
 Solution:
 
 The main aim of this use-case is to build a predictive model to predict if an applicant is able to repay the lending company or not.
+
+
+Project Video link:https://drive.google.com/file/d/13LbYrCvM6-jXjHxOMRVb0eHcuuA0rujs/view
